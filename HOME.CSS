@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+
+}
+ body {
+    margin: auto;
+ }
+
+.NAV {
+   background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: azure;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header h1 {
+    margin: 15px;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navs {
+    display: flex;
+    list-style: none;
+}
+
+.navs.active {
+    display: block;
+}
+
+.navs li {
+    margin: 15px;
+    font-weight: bolder;
+   
+    
+}
+.navs li a {
+    text-decoration: none;
+    color: #fff;
+    justify-content: center;
+}
+
+.navs a:hover {
+    background-color: #40910a;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    transition: all 0.7s;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: #09ad1f;
+   padding: 20px;
+   justify-content: center;
+   align-items: center;
+   margin: 25px;
+   width: 10%;
+   border: none;
+   border-radius: 30px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 20px;
+   font-weight: bold;
+   color: #fff;
+   text-transform: capitalize;
+}
+
+.btn:hover {
+    background-color: #af3708;
+}
+
+.menu {
+    display: none;
+    width: 12%;
+    color: white;
+}
+
+/* Body Side */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85vh;
+    width: 100%;
+    background-color: #000000e0;
+    color: #c5c1c1;
+}
+
+.left-side {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.left-side h1 {
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+.left-side p {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 15px;
+
+}
+
+
+/*  right-side */
+.right-side img {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* show-case */
+.show-case {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* L-side */
+.l-side h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px;
+}
+.l-side p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    padding: 5px;
+}
+.r-side img {
+    width: 100%;
+}
+
+/* Features */
+.Features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    text-transform: capitalize;
+    padding: 15px;
+}
+
+
+.Features img {
+   width: 20%;
+   height: 25%;
+   border-radius: 15px;
+}
+
+.Features img:hover {
+    width: 450px;
+    margin-top: 0 5px;
+    transition: all 0.9s;
+    cursor: pointer;
+}
+
+/* achievment */
+.achievment {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.achievment-item {
+    width: 35px;
+}
+
+
+
+@MEDIA (MAX-WIDTH: 600PX){
+    header h1 {
+        margin: 10px;
+        font-size: 14px;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn {
+        display: none;
+    }
+    .navs  {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        background-color: #060806;
+    }
+
+    .right-side img {
+        display: none;
+    }
+    
+.left-side h1 {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.left-side p {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 15px;
+}
+.menu {
+    width: 18%;
+    display: block;
+    cursor: pointer;
+    
+}
+}
